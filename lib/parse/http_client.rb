@@ -80,5 +80,6 @@ module Parse
     end
   end
 
-  DEFAULT_HTTP_CLIENT = defined?(JRUBY_VERSION) ? NetHttpClient : PatronHttpClient
+  DEFAULT_HTTP_CLIENT = NetHttpClient
+  # DEFAULT_HTTP_CLIENT = defined?(JRUBY_VERSION) ? NetHttpClient : PatronHttpClient
 end
